@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - Visual Homes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="VHlogo.jpg" alt="Visual Homes Logo">
+                <div class="logo-text">Visual Homes</div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('VHlogo.jpg'); padding: 150px 0 80px;">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Explore our portfolio of completed and ongoing architectural and construction projects.</p>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="section" style="padding: 40px 0;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <button class="btn" style="margin: 5px;" onclick="filterProjects('all')">All Projects</button>
+                <button class="btn" style="margin: 5px; background-color: transparent; color: var(--primary-color); border: 1px solid var(--primary-color);" onclick="filterProjects('residential')">Residential</button>
+                <button class="btn" style="margin: 5px; background-color: transparent; color: var(--primary-color); border: 1px solid var(--primary-color);" onclick="filterProjects('commercial')">Commercial</button>
+                <button class="btn" style="margin: 5px; background-color: transparent; color: var(--primary-color); border: 1px solid var(--primary-color);" onclick="filterProjects('ongoing')">Ongoing</button>
+                <button class="btn" style="margin: 5px; background-color: transparent; color: var(--primary-color); border: 1px solid var(--primary-color);" onclick="filterProjects('completed')">Completed</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-card" data-category="residential completed">
+                    <img src="017.jpg" alt="Modern Villa">
+                    <div class="project-overlay">
+                        <h3>Modern Villa</h3>
+                        <p>Banjul, The Gambia</p>
+                        <p>Completed: 2024</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial completed">
+                    <img src="039.jpg" alt="Office Complex">
+                    <div class="project-overlay">
+                        <h3>Office Complex</h3>
+                        <p>Serrekunda, The Gambia</p>
+                        <p>Completed: 2024</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential ongoing">
+                    <img src="046.jpg" alt="Luxury Apartments">
+                    <div class="project-overlay">
+                        <h3>Luxury Apartments</h3>
+                        <p>Bakau, The Gambia</p>
+                        <p>Expected Completion: 2025</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial completed">
+                    <img src="052.jpg" alt="Shopping Center">
+                    <div class="project-overlay">
+                        <h3>Shopping Center</h3>
+                        <p>Brikama, The Gambia</p>
+                        <p>Completed: 2024</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential completed">
+                    <img src="047.jpg" alt="Family Home">
+                    <div class="project-overlay">
+                        <h3>Family Home</h3>
+                        <p>Bundunka Kunda, The Gambia</p>
+                        <p>Completed: 2024</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial ongoing">
+                    <img src="053.jpg" alt="Hotel Resort">
+                    <div class="project-overlay">
+                        <h3>Hotel Resort</h3>
+                        <p>Kotu, The Gambia</p>
+                        <p>Expected Completion: 2025</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential completed">
+                    <img src="057.jpg" alt="Duplex Building">
+                    <div class="project-overlay">
+                        <h3>Duplex Building</h3>
+                        <p>Tallinding, The Gambia</p>
+                        <p>Completed: 2024</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="commercial completed">
+                    <img src="069.jpg" alt>Restaurant">
+                    <div class="project-overlay">
+                        <h3>Restaurant</h3>
+                        <p>Kololi, The Gambia</p>
+                        <p>Completed: 2024</p>
+                    </div>
+                </div>
+                <div class="project-card" data-category="residential ongoing">
+                    <img src="44.jpg" alt="Suburban Home">
+                    <div class="project-overlay">
+                        <h3>Suburban Home</h3>
+                        <p>Brufut, The Gambia</p>
+                        <p>Expected Completion: 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about working with Visual Homes.</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Visual Homes transformed our vision into a beautiful reality. Their attention to detail and professionalism throughout the construction process was exceptional."</p>
+                    <p class="testimonial-author">- Clients Name, Residential Client</p>
+                </div>
+                <div class="testimonial" style="display: none;">
+                    <p class="testimonial-text">"The engineering solutions provided by Visual Homes were innovative and efficient. They completed our commercial project on time and within budget."</p>
+                    <p class="testimonial-author">- Mariama SarrClient Name
+                <div class="testimonial" style="display: none;">
+                    <p class="testimonial-text">"Working with Muhammad and his team was a pleasure. They understood our needs and delivered a home that exceeded our expectations in every way."</p>
+                    <p class="testimonial-author">- Name of the client, Homeowner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Testimonials Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Video Testimonials</h2>
+                <p>Hear directly from our satisfied clients about their experience with Visual Homes.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                    <div style="width: 100%; height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border-radius: 4px;">
+                        <i class="fas fa-play-circle" style="font-size: 3rem; color: var(--accent-color);"></i>
+                    </div>
+                    <h3>Name of the client</h3>
+                    <p>Residential Client</p>
+                </div>
+                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                    <div style="width: 100%; height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border-radius: 4px;">
+                        <i class="fas fa-play-circle" style="font-size: 3rem; color: var(--accent-color);"></i>
+                    </div>
+                    <h3>Name of the client</h3>
+                    <p>Commercial Client</p>
+                </div>
+                <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                    <div style="width: 100%; height: 200px; background-color: #ddd; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border-radius: 4px;">
+                        <i class="fas fa-play-circle" style="font-size: 3rem; color: var(--accent-color);"></i>
+                    </div>
+                    <h3>Name of the client</h3>
+                    <p>Homeowner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background-color: var(--primary-color); color: white;">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h2 style="margin-bottom: 20px;">Have a Project in Mind?</h2>
+                <p style="margin-bottom: 30px;">Let's discuss how we can bring your vision to life with our architectural, engineering, and construction expertise.</p>
+                <a href="contact.html" class="btn" style="background-color: white; color: var(--primary-color);">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Visual Homes</h3>
+                    <p>Transforming visions into reality through exceptional architectural design, engineering, and construction services in The Gambia since 2024.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Architectural Design</a></li>
+                        <li><a href="services.html">Engineering Design</a></li>
+                        <li><a href="services.html">Construction</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                        <li><a href="services.html">Project Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>Bundunka Kunda, The Gambia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>(+965) 69033152</p>
+                            <p>(+220) 7044976</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>info@visualhomes.gm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Visual Homes. All Rights Reserved. | Designed by Abdoulkarim Trawally</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Projects Filter Functionality
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.btn');
+            
+            // Update button styles
+            buttons.forEach(button => {
+                if (button.textContent.toLowerCase().includes(category) || (category === 'all' && button.textContent === 'All Projects')) {
+                    button.style.backgroundColor = 'var(--accent-color)';
+                    button.style.color = 'white';
+                    button.style.border = 'none';
+                } else {
+                    button.style.backgroundColor = 'transparent';
+                    button.style.color = 'var(--primary-color)';
+                    button.style.border = '1px solid var(--primary-color)';
+                }
+            });
+            
+            // Show/hide projects based on category
+            projects.forEach(project => {
+                if (category === 'all' || project.getAttribute('data-category').includes(category)) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

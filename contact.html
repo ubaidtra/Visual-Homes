@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Visual Homes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="VHlogo.jpg" alt="Visual Homes Logo">
+                <div class="logo-text">Visual Homes</div>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('004.jpg'); padding: 150px 0 80px;">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team to discuss your project requirements.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 style="color: var(--primary-color); margin-bottom: 20px;">Get In Touch</h2>
+                    <p>We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Our Location</h3>
+                            <p>Bundunka Kunda, The Gambia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone Numbers</h3>
+                            <p>(+965) 69033152</p>
+                            <p>(+220) 7044976</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Address</h3>
+                            <p>info@visualhomes.gm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2 style="color: var(--primary-color); margin-bottom: 20px;">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div style="height: 400px; background-color: #f8f9fa; border-radius: 8px; overflow: hidden;">
+                <!-- In a real implementation, you would embed a Google Map here -->
+                <div style="width: 100%; height: 100%; background-color: #e9ecef; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                    <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 15px;"></i>
+                    <h3>Our Location</h3>
+                    <p>Bundunka Kunda, The Gambia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to common questions about our services and processes.</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 20px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 10px;">How long does a typical residential project take?</h3>
+                    <p>The timeline for residential projects varies based on size and complexity. A standard single-family home typically takes 6-9 months from design to completion, while larger or more complex projects may take longer.</p>
+                </div>
+                
+                <div style="margin-bottom: 20px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 10px;">Do you provide both design and construction services?</h3>
+                    <p>Yes, we offer comprehensive services that include architectural design, engineering, and construction. We can handle your project from initial concept through to completion, or provide individual services based on your needs.</p>
+                </div>
+                
+                <div style="margin-bottom: 20px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 10px;">What areas in The Gambia do you serve?</h3>
+                    <p>We provide services throughout The Gambia, including Banjul, Serrekunda, Bakau, Brikama, and surrounding areas. We're based in Bundunka Kunda and have completed projects across the country.</p>
+                </div>
+                
+                <div style="margin-bottom: 20px; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);">
+                    <h3 style="color: var(--primary-color); margin-bottom: 10px;">How do I get started with my project?</h3>
+                    <p>Getting started is easy! Simply contact us through this form, by phone, or email to schedule a consultation. We'll discuss your vision, requirements, and budget to determine the best approach for your project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Visual Homes</h3>
+                    <p>Transforming visions into reality through exceptional architectural design, engineering, and construction services in The Gambia since 2024.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Architectural Design</a></li>
+                        <li><a href="services.html">Engineering Design</a></li>
+                        <li><a href="services.html">Construction</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                        <li><a href="services.html">Project Management</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>Bundunka Kunda, The Gambia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>(+965) 69033152</p>
+                            <p>(+220) 7044976</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <p>info@visualhomes.gm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Visual Homes. All Rights Reserved. | Designed by Abdoulkarim Trawally</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
